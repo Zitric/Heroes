@@ -1,27 +1,26 @@
-<h1 class="animated fadeIn fast">
-  {{ heroe.name | uppercase }} <small>({{ heroe.appearance | date: 'y' }})</small>
-</h1>
-<hr>
+<div class="container main-container">
+  <div class="card animated fadeIn fast">
+    <div class="row animated fadeIn card-body">
 
-<div class="row animated fadeIn">
+      <div class="col-md-4">
+        <img [src]="heroe.imgDetail" alt="Name of the heroe"
+             class="img-fluid img-heroe">
+        <a [routerLink]="['/heroes']" href="" class="btn btn-outline-danger btn-block">Back</a>
+      </div>
 
-  <div class="col-md-4">
-    <img [src]="heroe.img" alt="Name of the heroe"
-         class="img-fluid img-heroe">
-    <a [routerLink]="['/heroes']" href="" class="btn btn-outline-danger btn-block">Back</a>
-
-  </div>
-
-  <div class="col-md-8">
-    <h3>{{ heroe.name }}</h3>
-    <hr>
-    <p>{{ heroe.bio }}</p>
-    <div>
-
-      <img *ngIf="heroe.house === 'Marvel'" src="/assets/img/Marvel.png"
-           alt="House DC" class="img-fluid col-md-8">
-      <img *ngIf="heroe.house === 'DC'" src="/assets/img/DC.png"
-           alt="House Marvel" class="img-fluid col-md-8">
+      <div class="col-md-8">
+        <h1>
+          {{ heroe.name | uppercase }} <small>({{ heroe.appearance | date: 'y' }})</small>
+        </h1>
+        <hr>
+        <p>{{ heroe.bio }}</p>
+        <div>
+          <img *ngIf="heroe.house === 'Marvel'" src="/assets/img/Marvel.png"
+               alt="House DC" class="img-fluid col-md-8">
+          <img *ngIf="heroe.house === 'DC'" src="/assets/img/DC.png"
+               alt="House Marvel" class="img-fluid col-md-8">
+        </div>
+      </div>
     </div>
   </div>
 </div>
