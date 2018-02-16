@@ -20,14 +20,14 @@ export class SeekerComponent implements OnInit {
     this.activatedRoute.params.subscribe( params => {
       this.text = params.text;
       this.heroes = this._heroesService.searchHeroes( this.text );
-      console.log( this.heroes );
+      // console.log( this.heroes );
     });
   }
 
 
   seeHeroe( name: string ) {
     this.router.navigate(['/heroe', name]);
-    console.log(name);
+    // console.log(name);
   }
 
 }

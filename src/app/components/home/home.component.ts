@@ -6,18 +6,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  smallScreen = false;
-
   constructor() {
-    // if (windows.screen.width <= 768) {
-    //   this.smallScreen = true;
-    // }
   }
 
   ngOnInit() {
-    if (window.screen.width <= 768) { // 768px portrait
-      this.smallScreen = true;
-    }
   }
 
 }

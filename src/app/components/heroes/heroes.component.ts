@@ -22,7 +22,7 @@ export class HeroesComponent implements OnInit {
 
   seeHeroe( name: string ) {
     this.router.navigate(['/heroe', name]);
-    console.log(name);
+    // console.log(name);
   }
 
 }

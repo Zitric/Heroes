@@ -35,7 +35,6 @@ body {
   color: white;
 }
 
-
 /* Animations */
 .animated {
   -webkit-animation-duration: 1s;
@@ -65,6 +64,9 @@ body {
   animation-name: fadeIn;
 }
 
-.img-heroe {
-  padding-bottom: 20px;
+
+@media (max-width: 991px) {
+  .main-text {
+    display: none;
+  }
 }
