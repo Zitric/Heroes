@@ -16,7 +16,7 @@ body {
 
 .home {
   background-color: black;
-  height: calc(100vh - 58px);
+  height: calc(100vh - 56px);
 }
 
 .card {
