@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HeroesService, Heroe } from '../../servicies/heroes.service';
+import { HeroesService } from '../../servicies/heroes.service';
 import { Router } from '@angular/router';
+import { Heroe } from '../../interfaces/heroe.interface';
 
 @Component({
   selector: 'app-seeker',
@@ -20,14 +21,11 @@ export class SeekerComponent implements OnInit {
     this.activatedRoute.params.subscribe( params => {
       this.text = params.text;
       this.heroes = this._heroesService.searchHeroes( this.text );
-      // console.log( this.heroes );
     });
   }
 
-
   seeHeroe( name: string ) {
     this.router.navigate(['/heroe', name]);
-    // console.log(name);
   }
 
 }

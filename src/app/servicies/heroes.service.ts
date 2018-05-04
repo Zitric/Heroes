@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Heroe } from '../interfaces/heroe.interface';
 
 @Injectable()
 export class HeroesService {
@@ -89,12 +90,3 @@ export class HeroesService {
 
 }
 
-
-export interface Heroe {
-  name: string;
-  bio: string;
-  img: string;
-  imgDetail: string;
-  appearance: string;
-  house: string;
-}

@@ -1,8 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: 'MyWebFont';
   src: url('assets/fonts/AmericanCaptain.otf'), url('assets/fonts/AmericanCaptain.ttf');
 }
+
 h1 {
   font-family: 'MyWebFont', sans-serif;
   -ms-text-size-adjust: 100%;
@@ -64,7 +64,7 @@ body {
   animation-name: fadeIn;
 }
 
-
+/* Media queries */
 @media (max-width: 991px) {
   .main-text {
     display: none;
