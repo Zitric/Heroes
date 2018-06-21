@@ -1,15 +1,7 @@
 <div class="container main-container">
    <div class="card-columns">
-    <div class="card animated fadeIn fast" *ngFor="let heroe of heroes;">
-      <img class="card-img-top" [src]='heroe.img' [alt]="heroe.name">
-      <div class="card-body">
-        <h5 class="card-title">{{ heroe.name }}</h5>
-        <p class="card-text">{{ heroe.bio }}</p>
-        <p class="card-text"><small class="text-muted">{{ heroe.appearance }}</small></p>
-        <button (click)="seeHeroe( heroe.name )"
-                class="btn btn-outline-primary btn-block">See more</button>
-
-      </div>
-    </div>
+     <app-card-heroe [heroe]="heroe"
+                     [index]="i"
+                     *ngFor="let heroe of heroes; let i = index"></app-card-heroe>
   </div>
 </div>

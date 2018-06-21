@@ -16,6 +16,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { SeekerComponent } from './components/seeker/seeker.component';
+import { CardHeroeComponent } from './components/card-heroe/card-heroe.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { SeekerComponent } from './components/seeker/seeker.component';
     AboutComponent,
     HeroesComponent,
     HeroeComponent,
-    SeekerComponent
+    SeekerComponent,
+    CardHeroeComponent
   ],
   imports: [
     BrowserModule,
