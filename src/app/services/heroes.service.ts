@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Heroe } from '../interfaces/heroe.interface';
+import { Hero } from '../interfaces/hero.interface';
 
 @Injectable()
 export class HeroesService {
 
-  private _heroes: Heroe[] = [
+  private _heroes: Hero[] = [
     {
       name: 'Aquaman',
       bio: 'El poder más reconocido de Aquaman es la capacidad telepática para comunicarse con la vida marina, la cual puede convocar a grandes distancias.',
@@ -65,11 +65,11 @@ export class HeroesService {
 
   constructor() { }
 
-  getHeroes(): Heroe[] {
+  getHeroes(): Hero[] {
     return this._heroes;
   }
 
-  getHeroe( name: string) {
+  getHero( name: string) {
     return this._heroes.find(function(element) {
       return name === element.name;
    });
@@ -77,11 +77,11 @@ export class HeroesService {
 
   searchHeroes( text: string) {
 
-    const arrayHeroes: Heroe[] = [];
+    const arrayHeroes: Hero[] = [];
 
-    for (const heroe of this._heroes ) {
-      if ( heroe.name.toLowerCase().indexOf( text.toLowerCase() ) >= 0 ) {
-        arrayHeroes.push( heroe );
+    for (const hero of this._heroes ) {
+      if ( hero.name.toLowerCase().indexOf( text.toLowerCase() ) >= 0 ) {
+        arrayHeroes.push( hero );
       }
     }
 

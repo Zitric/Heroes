@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { APP_ROUTING } from './app.routes';
 
 // Servicies
-import { HeroesService } from './servicies/heroes.service';
+import { HeroesService } from './services/heroes.service';
 
 
 // Components
@@ -14,9 +14,9 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
-import { HeroeComponent } from './components/heroe/heroe.component';
+import { HeroComponent } from './components/hero/hero.component';
 import { SeekerComponent } from './components/seeker/seeker.component';
-import { CardHeroeComponent } from './components/card-heroe/card-heroe.component';
+import { CardHeroComponent } from './components/card-heroe/card-hero.component';
 
 
 @NgModule({
@@ -26,9 +26,9 @@ import { CardHeroeComponent } from './components/card-heroe/card-heroe.component
     HomeComponent,
     AboutComponent,
     HeroesComponent,
-    HeroeComponent,
+    HeroComponent,
     SeekerComponent,
-    CardHeroeComponent
+    CardHeroComponent
   ],
   imports: [
     BrowserModule,

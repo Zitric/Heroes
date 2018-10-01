@@ -10,7 +10,7 @@ export class NavbarComponent {
 
   constructor( private router: Router ) { }
 
-  searchHeroe( text: string){
+  searchHero( text: string) {
     this.router.navigate(['/search', text]);
   }
 

@@ -3,22 +3,22 @@
     <div class="row animated fadeIn card-body">
 
       <div class="col-md-4">
-        <img [src]="heroe.imgDetail" alt="Name of the heroe"
-             class="img-fluid img-heroe">
+        <img [src]="hero.imgDetail" alt="Name of the hero"
+             class="img-fluid img-hero">
         <a [routerLink]="['/heroes']" href=""
            class="btn btn-outline-danger btn-block my-4">Back</a>
       </div>
 
       <div class="col-md-8">
         <h1>
-          {{ heroe.name | uppercase }} <small>({{ heroe.appearance | date: 'y' }})</small>
+          {{ hero.name | uppercase }} <small>({{ hero.appearance | date: 'y' }})</small>
         </h1>
         <hr>
-        <p>{{ heroe.bio }}</p>
+        <p>{{ hero.bio }}</p>
         <div>
-          <img *ngIf="heroe.house === 'Marvel'" src="assets/img/Marvel.png"
+          <img *ngIf="hero.house === 'Marvel'" src="assets/img/Marvel.png"
                alt="House DC" class="img-fluid col-md-8">
-          <img *ngIf="heroe.house === 'DC'" src="assets/img/DC.png"
+          <img *ngIf="hero.house === 'DC'" src="assets/img/DC.png"
                alt="House Marvel" class="img-fluid col-md-8">
         </div>
       </div>

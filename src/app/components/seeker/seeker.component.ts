@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HeroesService } from '../../servicies/heroes.service';
+import { HeroesService } from '../../services/heroes.service';
 import { Router } from '@angular/router';
-import { Heroe } from '../../interfaces/heroe.interface';
+import { Hero } from '../../interfaces/hero.interface';
 
 @Component({
   selector: 'app-seeker',
@@ -10,7 +10,7 @@ import { Heroe } from '../../interfaces/heroe.interface';
 })
 export class SeekerComponent implements OnInit {
 
-  heroes: Heroe[] = [];
+  heroes: Hero[] = [];
   text: string;
 
   constructor( private activatedRoute: ActivatedRoute,
@@ -24,8 +24,8 @@ export class SeekerComponent implements OnInit {
     });
   }
 
-  seeHeroe( name: string ) {
-    this.router.navigate(['/heroe', name]);
+  seeHero( name: string ) {
+    this.router.navigate(['/hero', name]);
   }
 
 }
